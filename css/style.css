@@ -1,0 +1,24 @@
+/*!
+Theme Name:         dotdev
+Theme URI:          https://dotdev.co
+Description:        Minimal theme based on nosidebar
+Version:            1.0.0
+Author:             Eric L. Barnes
+Author URI:         https://dotdev.co/
+Text Domain:        dotdev
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* purgecss start ignore */
+@import "partials/_base";
+@import "partials/_header";
+@import "partials/_pagination";
+@import "partials/_posts";
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';

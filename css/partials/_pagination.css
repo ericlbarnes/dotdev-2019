@@ -1,0 +1,9 @@
+.nav-links  {
+  @apply .flex .flex-wrap .justify-between;
+}
+
+@screen lg {
+  .nav-links  {
+    @apply .flex .justify-between;
+  }
+}

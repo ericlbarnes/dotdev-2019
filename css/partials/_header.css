@@ -1,0 +1,54 @@
+.logo {
+  width: 48px;
+  height: 48px;
+  @apply .flex .items-center .justify-center .text-gray-600;
+}
+
+#primary-menu {
+  @apply .flex .items-center;
+}
+
+#primary-menu a {
+  @apply .text-sm .text-gray-900 .mr-2;
+}
+
+#primary-menu a:hover {
+  @apply .text-gray-700;
+}
+
+@screen sm {
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  #primary-menu a {
+    @apply .text-base .mr-4;
+  }
+}
+
+@screen md {
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  #primary-menu a {
+    @apply .text-2xl;
+  }
+}
+
+@screen lg {
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  #primary-menu {
+    @apply .block;
+  }
+
+  #primary-menu a {
+    @apply .mr-0;
+  }
+}

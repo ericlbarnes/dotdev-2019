@@ -1,0 +1,12 @@
+
+html, body {
+  @apply .bg-gray-200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply .leading-tight .font-bold .text-gray-900;
+}
+
+.screen-reader-text {
+  display: none !important;
+}

@@ -1,0 +1,53 @@
+.post-thumbnail, .post-thumbnail img {
+  @apply .block .w-full;
+  height: auto;
+  max-width: 100%;
+}
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  @apply .mt-6 .mb-2;
+}
+
+.post__content h1 {
+  @apply .text-4xl;
+}
+
+.post__content h2 {
+  @apply .text-2xl;
+}
+
+.post__content h3 {
+  @apply .text-lg;
+}
+
+.post-content a {
+  @apply .text-gray-900 .border-b .border-gray-900;
+}
+
+.post-content p {
+  @apply .mb-4;
+}
+
+.post-content figure {
+  @apply .block .max-w-full;
+}
+
+.post-content ul, .post-content ol {
+  @apply .mb-4 .pl-4;
+}
+
+.post-content ul li {
+  @apply .list-disc .leading-loose;
+}
+
+.post-content ol li {
+  @apply .list-decimal .leading-loose;
+}
+
+.post-content img {
+  @apply .block .w-full;
+}
+
+.post-content pre {
+  @apply .overflow-x-auto .font-mono .p-4 .bg-gray-200 .mb-4 .rounded;
+}
