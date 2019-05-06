@@ -16,9 +16,9 @@
 		<header class="mb-4">
 			<?php
             if (is_singular()) :
-                the_title('<h1 class="text-gray-900 text-2xl font-bold">', '</h1>');
+                the_title('<h1 class="text-gray-900 text-2xl font-bold mt-0">', '</h1>');
             else :
-                the_title('<h2 class="text-gray-900 text-2xl font-bold"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
+                the_title('<h2 class="text-gray-900 text-2xl font-bold mt-0"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
             endif;
             ?>
 		</header><!-- .entry-header -->

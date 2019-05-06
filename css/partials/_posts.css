@@ -2,22 +2,6 @@
   @apply .block .w-full .h-auto;
 }
 
-.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
-  @apply .mt-6 .mb-2;
-}
-
-.post h1 {
-  @apply .text-3xl;
-}
-
-.post h2 {
-  @apply .text-2xl;
-}
-
-.post h3 {
-  @apply .text-xl;
-}
-
 .post-content a {
   @apply .text-gray-900 .border-b .border-gray-900;
 }
@@ -28,6 +12,10 @@
 
 .post-content img, .post-content video, .post-content figure {
   @apply .block .max-w-full;
+}
+
+.post-content blockquote {
+  @apply .italic .text-gray-600 .ml-0 .mb-4;
 }
 
 .post-content ul, .post-content ol {
