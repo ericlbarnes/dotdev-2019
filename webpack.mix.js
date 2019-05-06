@@ -6,6 +6,7 @@ mix.postCss('./css/style.css', './', [
   require('@fullhuman/postcss-purgecss')({
     content: [
       './**.php',
+      './**/**.php',
       './**.html',
       './**.js',
     ],

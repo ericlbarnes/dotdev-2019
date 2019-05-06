@@ -1,23 +1,21 @@
 .post-thumbnail, .post-thumbnail img {
-  @apply .block .w-full;
-  height: auto;
-  max-width: 100%;
+  @apply .block .w-full .h-auto;
 }
 
-.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   @apply .mt-6 .mb-2;
 }
 
-.post__content h1 {
-  @apply .text-4xl;
+.post h1 {
+  @apply .text-3xl;
 }
 
-.post__content h2 {
+.post h2 {
   @apply .text-2xl;
 }
 
-.post__content h3 {
-  @apply .text-lg;
+.post h3 {
+  @apply .text-xl;
 }
 
 .post-content a {
@@ -28,7 +26,7 @@
   @apply .mb-4;
 }
 
-.post-content figure {
+.post-content img, .post-content video, .post-content figure {
   @apply .block .max-w-full;
 }
 
@@ -42,10 +40,6 @@
 
 .post-content ol li {
   @apply .list-decimal .leading-loose;
-}
-
-.post-content img {
-  @apply .block .w-full;
 }
 
 .post-content pre {

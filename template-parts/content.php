@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="bg-white shadow-md mb-8">
+<article id="post-<?php the_ID(); ?>" class="post bg-white shadow-md mb-12">
 	<?php dotdev_post_thumbnail(); ?>
 
 	<div class="py-12 px-8">
