@@ -16,14 +16,21 @@
 		<header class="mb-4">
 			<?php
             if (is_singular()) :
-                the_title('<h1 class="text-gray-900 text-2xl font-bold mt-0">', '</h1>');
+                the_title('<h1 class="text-gray-900 text-4xl font-bold mt-0">', '</h1>');
             else :
-                the_title('<h2 class="text-gray-900 text-2xl font-bold mt-0"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
+                the_title('<h2 class="text-gray-900 text-4xl font-bold mt-0"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
             endif;
             ?>
+            <div class="text-sm text-gray-600">
+                <p class="leading-none">
+                    <span class="text-grey-dark"><?= dotdev_posted_on(); ?></span>
+                    by <?= get_the_author(); ?>
+                </p>
+            </div>
 		</header><!-- .entry-header -->
 
 		<div class="post-content mb-8">
+            <p>Werner Herzog’s latest film is called Meeting Gorbachev, in which he sits down with former Soviet leader Mikhail Gorbachev for a series of interviews about his life, political career, and his role in ending the Cold War.</p>
 			<?php
             the_content(sprintf(
                 wp_kses(
@@ -50,15 +57,11 @@
                 if ('post' === get_post_type()) :
             ?>
 				<div class="entry-meta flex items-center text-sm text-gray-600">
-					<?php
-                    dotdev_posted_on();
-                    echo '<span class="font-bold -mb-2 mx-2">&dot;</span>';
-                    dotdev_posted_by();
-                    ?>
+					<?php dotdev_entry_footer(); ?>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
 
-			<!-- <?php dotdev_entry_footer(); ?> -->
+			
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

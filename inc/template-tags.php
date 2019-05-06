@@ -64,14 +64,14 @@ if (! function_exists('dotdev_entry_footer')) :
             $categories_list = get_the_category_list(esc_html__(', ', 'dotdev'));
             if ($categories_list) {
                 /* translators: 1: list of categories. */
-                printf('<span class="cat-links">' . esc_html__('Posted in %1$s', 'dotdev') . '</span>', $categories_list); // WPCS: XSS OK.
+                printf('<span class="cat-links">' . esc_html__('%1$s', 'dotdev') . '</span>', $categories_list); // WPCS: XSS OK.
             }
 
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list('', esc_html_x(', ', 'list item separator', 'dotdev'));
-            if ($tags_list) {
+            if ($tags_list) { 
                 /* translators: 1: list of tags. */
-                printf('<span class="tags-links">' . esc_html__('Tagged %1$s', 'dotdev') . '</span>', $tags_list); // WPCS: XSS OK.
+                printf('<span class="tags-links">' . esc_html__('%1$s', 'dotdev') . '</span>', $tags_list); // WPCS: XSS OK.
             }
         }
 
@@ -107,8 +107,8 @@ if (! function_exists('dotdev_entry_footer')) :
                 ),
                 get_the_title()
             ),
-            '<span class="edit-link">',
-            '</span>'
+            '<div class="edit-link">',
+            '</div>'
         );
     }
 endif;
@@ -128,7 +128,7 @@ if (! function_exists('dotdev_post_thumbnail')) :
 
         if (is_singular()) :
             ?>
-			<div class="post-thumbnail">
+			<div class="post-thumbnail w-full">
 				<?php the_post_thumbnail(); ?>
 			</div><!-- .post-thumbnail -->
 

@@ -21,11 +21,11 @@ get_sidebar();
             get_template_part('template-parts/content', get_post_type());
 
         ?>
-			<div class="bg-white py-12 px-8 shadow-md mb-8">
+			<!-- <div class="bg-white py-12 px-8 shadow-md mb-8">
 				<?php
                     the_post_navigation();
                 ?>
-			</div>
+			</div> -->
 		<?php
 
             // If comments are open or we have at least one comment, load up the comment template.

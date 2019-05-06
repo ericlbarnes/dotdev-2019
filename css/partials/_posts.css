@@ -7,7 +7,9 @@
 }
 
 .post-content p {
-  @apply .mb-4;
+  @apply .mb-4 .text-xl;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
 }
 
 .post-content img, .post-content video, .post-content figure {
@@ -32,4 +34,9 @@
 
 .post-content pre {
   @apply .overflow-x-auto .font-mono .p-4 .bg-gray-200 .mb-4 .rounded;
+}
+
+.cat-links,
+.tags-links {
+  @apply .inline-block .rounded-full .px-3 .py-1 .text-sm .mr-2 .bg-gray-200 .text-gray-600;
 }
