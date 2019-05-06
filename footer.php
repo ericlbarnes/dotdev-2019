@@ -11,8 +11,7 @@
 
 ?>
 
-		</div><!-- #content -->
-	</div>
+	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer text-right text-gray-600 mb-8">
 		<div class="site-info">

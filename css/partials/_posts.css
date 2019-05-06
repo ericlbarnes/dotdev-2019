@@ -12,7 +12,7 @@
   font-weight: normal;
 }
 
-.post-content img, .post-content video, .post-content figure {
+.post-content iframe, .post-content img, .post-content video, .post-content figure {
   @apply .block .max-w-full;
 }
 
