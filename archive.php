@@ -23,7 +23,7 @@ get_sidebar();
                 ?>
 			</header><!-- .page-header -->
 
-            <div class="flex flex-col">
+        <div class="flex flex-col">
 			<?php
             /* Start the Loop */
             while (have_posts()) :

@@ -12,14 +12,22 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer text-center text-gray-600 mb-8">
-		<div class="site-info">
-			&copy; dotdev inc.
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+    <?php /* <div class="flex justify-center flex-row bg-white">
+        <div class="text-gray-700 px-4 py-2 m-2">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </div>
+        <div class="text-gray-700 px-4 py-2 m-2">
+            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+        </div>
+    </div>
+    <footer id="colophon" class="site-footer text-right text-gray-600 mb-8">
+        <div class="site-info">
+            &copy; dotdev inc.
+        </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+    */ ?>
 <?php wp_footer(); ?>
 
 </body>

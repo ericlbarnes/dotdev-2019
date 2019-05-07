@@ -36,5 +36,5 @@
 			</svg>
 		</a>
 	</header>
-	<div id="page" class="max-w-3xl mx-auto p-6 mx-auto">
+	<div id="page" class="max-w-3xl mx-auto p-6 pt-12 mx-auto">
 		<div id="content" class="site-content font-sans text-base text-gray-700 mx-4">

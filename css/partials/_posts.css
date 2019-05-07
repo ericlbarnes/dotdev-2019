@@ -33,7 +33,7 @@
 
 .cat-links,
 .tags-links a {
-  @apply .inline-block .rounded-full .px-3 .py-1 .text-sm .mr-2 .bg-gray-200 .text-gray-600;
+  @apply .inline-block .rounded-full .px-3 .py-1 .text-xs .mr-2 .bg-gray-200 .text-gray-600;
 }
 
 .post-content p {
