@@ -21,7 +21,7 @@
                 the_title('<h2 class="text-gray-900 font-bold mt-0 lg:text-4xl text-2xl"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
             endif;
             ?>
-            <div class="text-sm text-gray-600">
+            <div class="text-sm text-gray-600 mb-6">
                 <p class="leading-none">
                     <span class="text-grey-dark"><?= dotdev_posted_on(); ?></span>
                     by <?= get_the_author(); ?>

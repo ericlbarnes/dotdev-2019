@@ -728,13 +728,17 @@ body {
 .nav-links  {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.page-numbers {
+  margin-left: 0.5rem;
 }
 
 @media (min-width: 1024px) {
   .nav-links  {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -808,7 +812,7 @@ body {
 
 @media (min-width: 768px) {
   .post-content p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 

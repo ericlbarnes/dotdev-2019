@@ -1,9 +1,11 @@
 .nav-links  {
-  @apply .flex .flex-wrap .justify-between;
+  @apply .flex .flex-wrap .justify-center;
 }
-
+.page-numbers {
+    @apply .ml-2;
+}
 @screen lg {
   .nav-links  {
-    @apply .flex .justify-between;
+    @apply .flex .justify-center;
   }
 }

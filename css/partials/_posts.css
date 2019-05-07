@@ -42,6 +42,6 @@
 
 @screen md {
   .post-content p {
-    @apply .text-xl;
+    @apply .text-lg;
   }
 }
