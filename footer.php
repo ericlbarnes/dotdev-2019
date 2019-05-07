@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer text-right text-gray-600 mb-8">
+	<footer id="colophon" class="site-footer text-center text-gray-600 mb-8">
 		<div class="site-info">
 			&copy; dotdev inc.
 		</div><!-- .site-info -->

@@ -6,18 +6,13 @@
   @apply .text-gray-900 .border-b .border-gray-900;
 }
 
-.post-content p {
-  @apply .mb-4 .text-xl;
-  text-rendering: optimizeLegibility;
-  font-weight: normal;
-}
-
 .post-content iframe, .post-content img, .post-content video, .post-content figure {
   @apply .block .max-w-full;
 }
 
 .post-content blockquote {
-  @apply .italic .text-gray-600 .ml-0 .mb-4;
+  @apply .text-gray-600 .ml-0 .mb-4 .pl-4;
+  border-left: 3px solid #777;
 }
 
 .post-content ul, .post-content ol {
@@ -37,6 +32,16 @@
 }
 
 .cat-links,
-.tags-links {
+.tags-links a {
   @apply .inline-block .rounded-full .px-3 .py-1 .text-sm .mr-2 .bg-gray-200 .text-gray-600;
+}
+
+.post-content p {
+  @apply .mb-4 .text-base;
+}
+
+@screen md {
+  .post-content p {
+    @apply .text-xl;
+  }
 }

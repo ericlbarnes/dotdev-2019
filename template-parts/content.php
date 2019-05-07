@@ -12,13 +12,13 @@
 <article id="post-<?php the_ID(); ?>" class="post bg-white shadow-md mb-12">
 	<?php dotdev_post_thumbnail(); ?>
 
-	<div class="py-12 px-8">
+	<div class="p-8">
 		<header class="mb-4">
 			<?php
             if (is_singular()) :
-                the_title('<h1 class="text-gray-900 text-4xl font-bold mt-0">', '</h1>');
+                the_title('<h1 class="text-gray-900 font-bold mt-0 lg:text-4xl text-2xl">', '</h1>');
             else :
-                the_title('<h2 class="text-gray-900 text-4xl font-bold mt-0"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
+                the_title('<h2 class="text-gray-900 font-bold mt-0 lg:text-4xl text-2xl"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
             endif;
             ?>
             <div class="text-sm text-gray-600">
@@ -30,8 +30,7 @@
 		</header><!-- .entry-header -->
 
 		<div class="post-content mb-8">
-            <p>Werner Herzog’s latest film is called Meeting Gorbachev, in which he sits down with former Soviet leader Mikhail Gorbachev for a series of interviews about his life, political career, and his role in ending the Cold War.</p>
-			<?php
+            <?php
             the_content(sprintf(
                 wp_kses(
                     /* translators: %s: Name of current post. Only visible to screen readers */

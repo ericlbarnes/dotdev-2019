@@ -1,6 +1,10 @@
+body {
+  border-top: 8px solid #7d818a;
+}
 .logo {
-  width: 48px;
-  height: 48px;
+  width: 150px;
+  height: 75px;
+  display: block;
   @apply .text-gray-600;
 }
 
@@ -17,22 +21,17 @@
 }
 
 @screen sm {
-  .logo {
+/*  .logo {
     width: 64px;
     height: 64px;
   }
-
+*/
   #primary-menu a {
     @apply .text-base .mr-4;
   }
 }
 
 @screen md {
-  .logo {
-    width: 120px;
-    height: 120px;
-  }
-
   #primary-menu a {
     @apply .text-2xl;
   }
