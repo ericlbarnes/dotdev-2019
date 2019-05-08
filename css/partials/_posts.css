@@ -45,3 +45,12 @@
     @apply .text-lg;
   }
 }
+
+.gallery {
+  @apply my-8;
+}
+figcaption,
+.wp-caption, 
+.gallery-caption {
+  @apply .italic .text-gray-600;
+}

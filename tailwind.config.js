@@ -13,6 +13,10 @@ module.exports = {
           800: '#2d3748',
           900: '#1a202c',
         },
+        logo: {
+          'gray': '#f2f2f2',
+          'red': '#E23A26',
+        }
       },
     },
     fontFamily: {

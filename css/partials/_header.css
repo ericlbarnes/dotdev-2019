@@ -1,11 +1,15 @@
 body {
-  border-top: 8px solid #7d818a;
+  @apply .border-gray-600 .border-t-8 .border-solid .font-sans; 
 }
+
 .logo {
   width: 150px;
   height: 75px;
   display: block;
   @apply .text-gray-600;
+}
+.logo g {
+  @apply .text-gray-600 .fill-current;
 }
 
 #primary-menu {

@@ -21,3 +21,23 @@ h3 {
 .screen-reader-text {
   display: none !important;
 }
+
+.widget-title, .widget-title label {
+    @apply .mb-2 .font-bold .tracking-wide .uppercase .text-xs;
+}
+
+.widget li,
+.widget_recent_entries ul li {
+    @apply .mt-3;
+}
+.widget input {
+    @apply .mt-6 .shadow .appearance-none .border .rounded .w-full .py-2 .px-3 .text-gray-900 .leading-tight .mb-6;
+    max-width: 50%;
+}
+.search-submit {
+    @apply .py-2 .px-4 .rounded .mb-4;
+    display: none;
+}
+.footer p {
+    @apply .mb-6;
+}

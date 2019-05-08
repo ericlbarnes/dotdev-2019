@@ -14,20 +14,26 @@
 	</div><!-- #content -->
 </div><!-- #page -->
 
-    <?php /* <div class="flex justify-center flex-row bg-white">
-        <div class="text-gray-700 px-4 py-2 m-2">
-            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+    <div class="flex flex-wrap bg-white pb-12 footer">
+        <div class="w-full md:w-1/3 text-xs text-gray-700 p-2 px-8">
+            <?php dynamic_sidebar( 'sidebar-3' ); ?>
         </div>
-        <div class="text-gray-700 px-4 py-2 m-2">
+        <div class="w-full md:w-1/3 text-sm text-gray-700 p-2 px-8">
             <?php dynamic_sidebar( 'sidebar-2' ); ?>
         </div>
+        <div class="w-full md:w-1/3 text-xs text-gray-700 p-2 px-8">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+            <p>
+                <b>Follow Us:</b>
+                <a href="https://twitter.com/dotdevco">Twitter</a> | 
+                <a href="https://www.facebook.com/dotdevco">Facebook</a> |
+                <a href="https://dotdev.co/feed/">RSS</a> |
+                <a href="https://confirmsubscription.com/h/d/5EFE68D0F5BBDFB7">Email</a>
+            </p>
+            <p class="text-gray-600">&copy; 2015 - <?= date("Y"); ?> dotdev inc.</p>
+        </div>
     </div>
-    <footer id="colophon" class="site-footer text-right text-gray-600 mb-8">
-        <div class="site-info">
-            &copy; dotdev inc.
-        </div><!-- .site-info -->
-    </footer><!-- #colophon -->
-    */ ?>
+    
 <?php wp_footer(); ?>
 
 </body>

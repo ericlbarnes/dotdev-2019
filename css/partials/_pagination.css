@@ -1,11 +1,11 @@
 .nav-links  {
-  @apply .flex .flex-wrap .justify-center;
+  @apply .flex .flex-wrap .justify-between .text-xs;
 }
 .page-numbers {
     @apply .ml-2;
 }
 @screen lg {
   .nav-links  {
-    @apply .flex .justify-center;
+    /*@apply .flex .justify-center;*/
   }
 }

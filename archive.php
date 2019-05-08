@@ -18,7 +18,7 @@ get_sidebar();
 
 			<header class="mb-6">
 				<?php
-                    the_archive_title('<h1 class="mb-2">', '</h1>');
+                    dotdev_the_archive_title('<h1 class="mb-2">', '</h1>');
                     the_archive_description('<div class="text-gray-800">', '</div>');
                 ?>
 			</header><!-- .page-header -->
