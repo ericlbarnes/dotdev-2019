@@ -18,6 +18,14 @@ h3 {
   @apply .text-xl;
 }
 
+a {
+  @apply .border-0;
+}
+
+a:hover {
+  @apply .text-gray-600;
+}
+
 .screen-reader-text {
   display: none !important;
 }

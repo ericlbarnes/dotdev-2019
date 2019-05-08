@@ -40,11 +40,16 @@ get_sidebar();
             endwhile;
 
         ?>
-			<div class="bg-white py-12 px-8 mb-8 shadow-md">
-				<?php
-                    the_posts_navigation();
-                ?>
-			</div>
+
+        <div class="py-4 px-8 mb-8 bg-white shadow-md">
+            <?php
+            the_posts_navigation([
+                'prev_text' => __( '&larr; Older Posts', 'textdomain' ),
+                'next_text' => __( 'Newer Posts &rarr;', 'textdomain' ),
+            ]);
+            ?>
+        </div>
+
 		<?php
 
         else :

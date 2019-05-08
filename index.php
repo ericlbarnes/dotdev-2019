@@ -45,13 +45,9 @@ get_sidebar();
             endwhile;
 
     ?>
-        <div class="bg-white py-12 px-8 mb-8 shadow-md text-xl">
+
+        <div class="py-4 px-8 mb-8 bg-white shadow-md">
             <?php
-            // the_posts_pagination( array(
-            //     'mid_size'  => 4,
-            //     'prev_text' => __( 'Back', 'textdomain' ),
-            //     'next_text' => __( 'Next &raquo;', 'textdomain' ),
-            // ));
             the_posts_navigation([
                 'prev_text' => __( '&larr; Older Posts', 'textdomain' ),
                 'next_text' => __( 'Newer Posts &rarr;', 'textdomain' ),

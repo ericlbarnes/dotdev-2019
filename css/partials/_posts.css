@@ -6,6 +6,10 @@
   @apply .text-gray-900 .border-b .border-gray-900;
 }
 
+.post-content a:hover {
+  @apply .text-gray-600 .border-b .border-gray-400;
+}
+
 .post-content iframe, .post-content img, .post-content video, .post-content figure {
   @apply .block .max-w-full;
 }

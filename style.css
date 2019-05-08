@@ -1,8 +1,8 @@
 /*!
 Theme Name:         dotdev
 Theme URI:          https://dotdev.co
-Description:        Minimal theme based on nosidebar
-Version:            1.0.0
+Description:        Minimal theme
+Version:            1.0.1
 Author:             Eric L. Barnes
 Author URI:         https://dotdev.co/
 Text Domain:        dotdev
@@ -666,6 +666,14 @@ h3 {
   font-size: 1.25rem;
 }
 
+a {
+  border-width: 0;
+}
+
+a:hover {
+  color: #7d818a;
+}
+
 .screen-reader-text {
   display: none !important;
 }
@@ -786,13 +794,25 @@ body {
   font-size: 0.75rem;
 }
 
+.nav-links div {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.nav-previous {
+}
+
+.nav-next {
+  text-align: right;
+}
+
 .page-numbers {
   margin-left: 0.5rem;
 }
 
 @media (min-width: 1024px) {
-  .nav-links  {
-    /*@apply .flex .justify-center;*/
+  .nav-links div {
+    width: 50%;
   }
 }
 
@@ -806,6 +826,12 @@ body {
   color: #1a202c;
   border-bottom-width: 1px;
   border-color: #1a202c;
+}
+
+.post-content a:hover {
+  color: #7d818a;
+  border-bottom-width: 1px;
+  border-color: #cbd5e0;
 }
 
 .post-content iframe, .post-content img, .post-content video, .post-content figure {
