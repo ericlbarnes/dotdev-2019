@@ -23,23 +23,18 @@ get_sidebar();
                 ?>
 			</header><!-- .page-header -->
 
-        <div class="flex flex-col">
-			<?php
-            /* Start the Loop */
-            while (have_posts()) :
+        <div class="flex flex-wrap mb-4">
+			<?php while (have_posts()) : ?>
+                <div class="w-full sm:w-1/2 overflow-hidden">
+                <?php 
                 the_post();
-
-                /*
-                 * Include the Post-Type-specific template for the content.
-                 * If you want to override this in a child theme, then include a file
-                 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-                 */
-                get_template_part('template-parts/content', get_post_type());
-
-            endwhile;
-
-        ?>
-			<div class="py-4 px-8 mb-8 bg-white shadow-md">
+                get_template_part('template-parts/content', 'grid');
+                ?>
+                </div>
+            <?php endwhile; ?>
+        </div>
+		
+        	<div class="py-4 px-8 mb-8 bg-white shadow-md">
                 <?php
                 the_posts_navigation([
                     'prev_text' => __( '&larr; Older Posts', 'textdomain' ),
@@ -50,12 +45,9 @@ get_sidebar();
 		<?php
 
         else :
-
             get_template_part('template-parts/content', 'none');
-
         endif;
         ?>
-        </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

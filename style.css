@@ -707,7 +707,7 @@ a:hover {
   color: #1a202c;
   line-height: 1.25;
   margin-bottom: 1.5rem;
-  max-width: 50%;
+  max-width: 75%;
 }
 
 .search-submit {
@@ -906,6 +906,23 @@ figcaption,
 .gallery-caption {
   font-style: italic;
   color: #7d818a;
+}
+
+.truncate-post {
+  height: 225px;
+  max-height: 225px;
+  text-overflow: ellipsis !important;
+  margin-bottom: 1.25rem;
+  white-space: normal;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .truncate-post {
+    height: 300px;
+    max-height: 300px;
+  }
 }
 
 /* purgecss end ignore */

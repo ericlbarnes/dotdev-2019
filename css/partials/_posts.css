@@ -58,3 +58,20 @@ figcaption,
 .gallery-caption {
   @apply .italic .text-gray-600;
 }
+
+
+.truncate-post {
+    height: 225px;
+    max-height: 225px;
+    text-overflow: ellipsis !important;
+    margin-bottom: 1.25rem;
+    white-space: normal;
+    position: relative;
+    overflow: hidden;
+}
+@screen sm {
+  .truncate-post {
+    height: 300px;
+    max-height: 300px;
+  }
+}
