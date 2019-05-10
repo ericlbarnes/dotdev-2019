@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="post bg-white shadow-md mx-2 truncate-post">
+<article id="post-<?php the_ID(); ?>" class="post bg-white shadow-md mx-2 mb-8">
     <?php dotdev_post_thumbnail(); ?>
     <div class="p-3 sm:p-8">
         <header class="">

@@ -2,7 +2,7 @@
 Theme Name:         dotdev
 Theme URI:          https://dotdev.co
 Description:        Minimal theme
-Version:            1.0.1
+Version:            1.0.2
 Author:             Eric L. Barnes
 Author URI:         https://dotdev.co/
 Text Domain:        dotdev
@@ -19,6 +19,7 @@ License URI:        http://opensource.org/licenses/MIT
 @import "partials/_header";
 @import "partials/_pagination";
 @import "partials/_posts";
+@import "partials/_carbon";
 /* purgecss end ignore */
 
 @import 'tailwindcss/utilities';

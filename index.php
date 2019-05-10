@@ -32,19 +32,22 @@ get_sidebar();
             // echo '<div class="flex flex-col">';
 
             /* Start the Loop */
+            $count = 0;
             while (have_posts()) :
                 the_post();
-
+                if ($count == 1) {
+                    echo '<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>';
+                }
                 /*
                  * Include the Post-Type-specific template for the content.
                  * If you want to override this in a child theme, then include a file
                  * called content-___.php (where ___ is the Post Type name) and that will be used instead.
                  */
                 get_template_part('template-parts/content', get_post_type());
-
+                $count++;
             endwhile;
-
     ?>
+        
 
         <div class="py-4 px-8 mb-8 bg-white shadow-md">
             <?php
