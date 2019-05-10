@@ -24,9 +24,9 @@ get_sidebar();
 			</header><!-- .page-header -->
 
         <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>
-        <div class="flex flex-wrap mb-4">
+        <div class="mb-4">
             <?php while (have_posts()) : ?>
-                <div class="w-full md:w-1/2">
+                <div class="w-full">
                 <?php 
                 the_post();
                 get_template_part('template-parts/content', 'grid');

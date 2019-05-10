@@ -17,5 +17,8 @@
             the_title('<h2 class="entry-title text-gray-900 font-bold mt-0 text-lg"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
             ?>
         </header>
+        <!-- <div class="post-content mb-8">
+            <?php the_excerpt(); ?>
+        </div> -->
     </div>
 </article>
