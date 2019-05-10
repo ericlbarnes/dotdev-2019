@@ -23,13 +23,17 @@ get_sidebar();
                 ?>
 			</header><!-- .page-header -->
 
-        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>
         <div class="mb-4">
+            <?php $count = 0; ?>
             <?php while (have_posts()) : ?>
                 <div class="w-full">
                 <?php 
                 the_post();
+                if ($count == 1) {
+                    echo '<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>';
+                }
                 get_template_part('template-parts/content', 'grid');
+                $count++;
                 ?>
                 </div>
             <?php endwhile; ?>
