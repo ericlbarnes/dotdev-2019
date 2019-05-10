@@ -28,7 +28,7 @@
                 <a href="https://twitter.com/dotdevco">Twitter</a> | 
                 <a href="https://www.facebook.com/dotdevco">Facebook</a> |
                 <a href="https://dotdev.co/feed/">RSS</a> |
-                <a href="https://confirmsubscription.com/h/d/5EFE68D0F5BBDFB7">Email</a>
+                <a href="http://eepurl.com/gqPc59">Email</a>
             </p>
             <p class="text-gray-600">&copy; 2015 - <?= date("Y"); ?> dotdev inc.</p>
         </div>
