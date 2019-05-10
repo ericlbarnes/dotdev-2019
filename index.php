@@ -18,6 +18,7 @@ get_sidebar();
 	<div>
 		<main>
 
+            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>
 		<?php
         if (have_posts()) :
             
@@ -35,9 +36,6 @@ get_sidebar();
             $count = 0;
             while (have_posts()) :
                 the_post();
-                if ($count == 1) {
-                    echo '<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>';
-                }
                 /*
                  * Include the Post-Type-specific template for the content.
                  * If you want to override this in a child theme, then include a file
