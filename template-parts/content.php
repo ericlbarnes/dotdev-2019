@@ -23,8 +23,10 @@
             ?>
             <div class="text-sm text-gray-600 mb-6">
                 <p class="leading-none">
-                    <span class="text-grey-dark"><?= dotdev_posted_on(); ?></span>
-                    by <a href="<?= esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?= get_the_author(); ?></a>
+                    <?php if (is_singular()) : ?>
+                        <span class="text-grey-dark"><?= dotdev_posted_on(); ?></span>
+                        by <a href="<?= esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?= get_the_author(); ?></a>
+                    <?php endif; ?>
                 </p>
             </div>
 		</header><!-- .entry-header -->

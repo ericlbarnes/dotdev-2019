@@ -185,3 +185,16 @@ function jetpackme_remove_rp() {
 	}
 }
 add_filter( 'wp', 'jetpackme_remove_rp', 20 );
+
+
+function featuredtoRSS($content) {
+	global $post;
+	if ( has_post_thumbnail( $post->ID ) ){
+		$content = '<div><a href="'.esc_url(get_permalink()).'">';
+		$content = '<div><a href="'.esc_url(get_permalink()).'">' . get_the_post_thumbnail( $post->ID, 'large', array( 'style' => 'margin-bottom: 15px;' ) ) . '</a></div>' . $content;
+	}
+	return $content;
+}
+ 
+add_filter('the_excerpt_rss', 'featuredtoRSS');
+add_filter('the_content_feed', 'featuredtoRSS');
