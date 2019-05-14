@@ -18,16 +18,14 @@ get_sidebar();
 		<?php
         while (have_posts()) :
             the_post();
-
             get_template_part('template-parts/content', get_post_type());
-
         ?>
 
-        <?php if ( class_exists( 'Jetpack RelatedPosts' ) ): ?>
-            <div class="py-4 px-8 mb-8 bg-white shadow-md">
-                <?= do_shortcode( '[jetpack-related-posts]' ); ?>
-            </div>
-        <?php endif; ?>
+            <?php if ( class_exists( 'Jetpack RelatedPosts' ) ): ?>
+                <div class="py-4 px-8 mb-8 bg-white shadow-md">
+                    <?= do_shortcode( '[jetpack-related-posts]' ); ?>
+                </div>
+            <?php endif; ?>
 
 			<div class="py-4 px-8 mb-8 bg-white shadow-md">
 				<?php
@@ -37,13 +35,13 @@ get_sidebar();
                     ]);
                 ?>
 			</div>
-		<?php
-            // If comments are open or we have at least one comment, load up the comment template.
-            // if (comments_open() || get_comments_number()) :
-            //     comments_template();
-            // endif;
-        endwhile; // End of the loop.
-        ?>
+    		<?php if (comments_open() || get_comments_number()) : ?>
+                <div class="py-4 px-8 mb-8 bg-white shadow-md">
+                    <?php comments_template(); ?>
+                </div>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

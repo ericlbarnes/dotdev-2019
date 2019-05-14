@@ -54,15 +54,11 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php
-                if ('post' === get_post_type()) :
-            ?>
+			<?php if ('post' === get_post_type()) : ?>
 				<div class="entry-meta flex items-center text-sm text-gray-600">
 					<?php dotdev_entry_footer(); ?>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
-
-			
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

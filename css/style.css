@@ -20,6 +20,7 @@ License URI:        http://opensource.org/licenses/MIT
 @import "partials/_pagination";
 @import "partials/_posts";
 @import "partials/_carbon";
+@import "partials/_comments";
 /* purgecss end ignore */
 
 @import 'tailwindcss/utilities';
