@@ -17,7 +17,8 @@ get_sidebar();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+        <main id="main" class="site-main">
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7ICKJN&placement=dotdevco" id="_carbonads_js"></script>
 
 		<?php
         while (have_posts()) :

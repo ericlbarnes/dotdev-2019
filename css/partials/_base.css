@@ -42,7 +42,7 @@ a:hover {
     @apply .mt-6 .shadow .appearance-none .border .rounded .w-full .py-2 .px-3 .text-gray-900 .leading-tight .mb-6;
     max-width: 75%;
 }
-.search-submit {
+.footer .search-submit {
     @apply .py-2 .px-4 .rounded .mb-4;
     display: none;
 }

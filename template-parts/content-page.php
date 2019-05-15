@@ -9,44 +9,22 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
+<article id="post-<?php the_ID(); ?>" class="post bg-white shadow-md mb-12">
 	<?php dotdev_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dotdev' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+	<div class="p-3 sm:p-8">
+		<header class="mb-4">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+		<div class="post-content mb-8">
 			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'dotdev' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
+			the_content();
+
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dotdev' ),
+				'after'  => '</div>',
+			) );
 			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+		</div>
+	</div>
+
 </article><!-- #post-<?php the_ID(); ?> -->

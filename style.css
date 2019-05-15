@@ -710,7 +710,7 @@ a:hover {
   max-width: 75%;
 }
 
-.search-submit {
+.footer .search-submit {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -832,6 +832,49 @@ body {
   color: #7d818a;
   border-bottom-width: 1px;
   border-color: #cbd5e0;
+}
+
+.post-content input[type=text],
+.post-content input[type=email],
+.post-content input[type=url],
+.post-content input[type=search],
+.post-content textarea {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #4a5568;
+  line-height: 1.25;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.post-content .search-submit {
+  background-color: #4299e1;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.post-content .search-submit:hover {
+  background-color: #2b6cb0;
 }
 
 .post-content iframe, .post-content img, .post-content video, .post-content figure {
@@ -1162,6 +1205,7 @@ figcaption,
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.25rem;
+  cursor: pointer;
 }
 
 #commentform .submit:hover {
