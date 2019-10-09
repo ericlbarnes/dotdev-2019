@@ -2,10 +2,7 @@
   @apply .flex .flex-wrap .justify-between .text-xs;
 }
 .nav-links div {
-    @apply .mb-2 .w-full;
-}
-.nav-previous {
-
+    @apply .w-full;
 }
 .nav-next {
     @apply .text-right;
